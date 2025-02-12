@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #192026;
+    font-family: 'Poppins', serif;
+    color: white;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 5em;
+    color: white;
+}
+
+.header-btn {
+    color: #868686;
+}
+
+.header-input {
+    background: #374151;
+    border: 0;
+    width: 30%;
+}
+
+.header-input::placeholder {
+    color: #868686;
+}
+
+.main-container {
+    padding: 1em 5em;
+}
+
+.main-container p {
+    color: #868686;
+}
+
+.current-movie {
+    position: relative;
+    margin: 2em 0;
+}
+
+.current-movie img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.current-movie p,
+.current-movie h2 {
+    position: absolute;
+}
+
+.current-movie h2 {
+    top: 55%;
+    left: 5%;
+}
+
+.current-movie p {
+    font-size: 1rem;
+    height: 4.2rem;
+    width: 50%;
+    color: white;
+    overflow: hidden;
+    top: 70%;
+    left: 5%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+}
+
+.movie-card-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2em;
+    margin-bottom: 3em;
+}
+
+.movie-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.movie-card p {
+    color: white;
+    z-index: 1;
+}
+
+/* .movie-card:hover img,
+.movie-card:hover .card-overlay {
+    transform: translateY(-10px);
+    transition: ease-out;
+} */
+
+.card-overlay {
+    background: linear-gradient(180deg, rgba(29, 29, 29, 0) 0%, #0F1E29 100%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.episode {
+    position: absolute;
+    top: 70%;
+}
